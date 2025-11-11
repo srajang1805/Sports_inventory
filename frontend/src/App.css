@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #0f3057, #2b5876);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  text-align: center;
+  color: #ffcb05;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  backdrop-filter: blur(8px);
+}
+
+input, button {
+  padding: 12px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+input {
+  width: 85%;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+button {
+  background-color: #ff7f00;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ffcb05;
+  color: #0f3057;
+}
+
+a {
+  color: #ffcb05;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background: rgba(255,255,255,0.2);
+  color: #ffcb05;
+}
+
+tr:nth-child(even) {
+  background: rgba(255,255,255,0.05);
+}
+
+tr:hover {
+  background: rgba(255,255,255,0.2);
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+button.return-btn {
+  background-color: #00c851;
+}
+
+button.return-btn:hover {
+  background-color: #33ff99;
+  color: #0f3057;
+}
+/* MODAL STYLING */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background: rgba(255,255,255,0.95);
+  color: #00203f;
+  padding: 30px;
+  border-radius: 16px;
+  width: 400px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.modal-content select, 
+.modal-content input {
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #ff7f00;
+  border-radius: 8px;
+}
+
+.modal-content button {
+  margin-top: 10px;
+}

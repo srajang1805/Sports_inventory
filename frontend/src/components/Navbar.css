@@ -1,0 +1,29 @@
+.navbar {
+  background-color: #00203f;
+  color: white;
+  padding: 12px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffcb05;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcb05;
+}
